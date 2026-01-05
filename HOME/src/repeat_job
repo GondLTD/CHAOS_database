@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+#SBATCH --job-name=repeater
+#SBATCH --account=RPTU-MLVT
+#SBATCH --partition=skylake-96
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=10-00:00:00
+
+module purge
+module load anaconda3/latest
+conda activate {ENVIRONMENT_NAME}
+
+python3 repeat_wrapper.py
+
+conda deactivate
