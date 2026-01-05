@@ -134,6 +134,7 @@ There is also one JSON file for all molecules available on Zenodo, omitting the 
 
 ### Required directory structure
 
+```text
 HOME
 ├── com
 ├── csm
@@ -161,3 +162,4 @@ HOME
 SCRATCH
 ├── calc
 └── chk
+```
